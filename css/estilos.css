@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#navBar{
+
+    background-color: #386641;
+
+}
+
+
+.nav-link{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #F2E8CF;
+}
+
+.section-padding{
+
+    padding: 100px 0;
+
+
+}
+
+.carousel-item{
+
+    height: 100vh;
+    min-height: 300px;
+
+}
+
+.carousel-inner  img{
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.carousel-caption{
+
+    bottom: 150px;
+    z-index: 2;
+
+}
+
+
+.carousel-caption h5{
+
+    color: #A7C957;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+
+}
+
+.carousel-inner::before{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+}
+
+.navbar-nav a{
+
+    font-size: 15px;
+}
+
+.navbar-light .navbar-brand{
+
+    color: #F2E8CF;
+    font-size: 25px;
+    font-family: "Merriweather", serif;;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+
+    color: #000;
+
+}
+
+.navbar-light .navbar-nav .navbar-link{
+
+    color: #000;
+
+}
+
+
+
+.w100{
+
+    height: 100vh;
+
+}
+
+#tituloDestacados{
+
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+
+
+}
+
+/*css responsivo*/
+
+
+
+@media only screen and (max-width: 1000px ){
+
+    .navbar-nav{
+
+        text-align: center;
+    }
+
+    .carousel-caption{
+
+        bottom: 150px;
+    }
+
+    .carousel-caption h5{
+
+        font-size: 45px;
+
+    }
+
+    .carousel-caption p{
+
+        width: 100%;
+        line-height: 1.0;
+        font-size: 20px;
+    }
+
+}
+    

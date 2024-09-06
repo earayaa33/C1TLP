@@ -122,6 +122,10 @@
 
 #tituloDestacados{
 
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 55px;
     padding-top: 40px;
     text-align: center;
     padding-bottom: 40px;
@@ -129,8 +133,29 @@
 
 }
 
-/*css responsivo*/
+#itemsProductosDestacados{
 
+    background-color: #386641;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+}
+
+.card{
+
+    margin-bottom: 50px;
+    padding: 20px;
+    margin-left: 40px;
+
+
+}
+
+
+/*css responsivo*/
 
 
 @media only screen and (max-width: 1000px ){
@@ -158,5 +183,55 @@
         font-size: 20px;
     }
 
+    .card{
+
+        left: 100px;
+
+    }
+
 }
+
+/*seccion catalogo css*/
+
+#containerCatalogo{
+
+    background-color: #F2E8CF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+#tituloCatalogo{
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 60px;
+
+
+}
+
+.Catalogo1, .Catalogo2{
     
+    background-color: #F2E8CF;
+
+}
+
+.Catalogo1 .card{
+
+    color: #F2E8CF;
+    height: 500px;
+    background-color: #386641;
+
+
+}
+
+.Catalogo2 .card{
+
+    color: #F2E8CF;
+    height: 500px;
+    background-color: #386641;
+
+
+}

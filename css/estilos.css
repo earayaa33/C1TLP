@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100..900&display=swap');
+
 
 *{
 
@@ -9,7 +11,7 @@
 
 #navBar{
 
-    background-color: #386641;
+    background-color: #1A4D2E;
 
 }
 
@@ -20,7 +22,7 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #F2E8CF;
+    color: #FFFFFF;
 }
 
 .section-padding{
@@ -39,8 +41,6 @@
 
 .carousel-inner  img{
 
-    height: 100%;
-    width: 100%;
 
 
 }
@@ -55,8 +55,9 @@
 
 .carousel-caption h5{
 
-    color: #A7C957;
-    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    color: #338543;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 25px;
@@ -64,9 +65,10 @@
 
 .carousel-caption p{
 
+    font-family: 'Montserrat', sans-serif;
     width: 60%;
     margin: auto;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.9;
 
 }
@@ -91,12 +93,15 @@
 
 .navbar-light .navbar-brand{
 
-    color: #F2E8CF;
-    font-size: 25px;
-    font-family: "Merriweather", serif;;
-    font-weight: 700;
-    text-transform: uppercase;
+    padding-left: 10px;
+    color: #FFFFFF;
     letter-spacing: 2px;
+}
+
+#brand{
+
+    font-size: 55px;
+
 }
 
 .navbar-light .navbar-brand:focus,
@@ -119,7 +124,7 @@
     height: 100vh;
 
 }
-
+/*
 #tituloDestacados{
 
     margin: 0;
@@ -153,9 +158,68 @@
 
 
 }
+*/
 
+
+
+#seccionEquipo{
+
+    background-color: #ece8cc;
+
+}
+
+
+.textoEquipo #tituloEquipo, #parrafoEquipo, #botonEquipo{
+
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+#tituloEquipo{
+
+    color: #1A4D2E;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+
+
+}
+
+#footer{
+
+    color: #ffffff;
+    background-color: #3d3124;
+    text-align: center;
+}
 
 /*css responsivo*/
+
+@media only screen and (min-width: 985px){
+
+    .colsProductos, .colsFooter{
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width:1200px) and (max-height: 1367px){
+
+    .carousel-inner img{
+
+        height: 100vh;
+        width: 100vw;
+
+
+    }
+
+
+}
 
 
 @media only screen and (max-width: 1000px ){
@@ -167,7 +231,7 @@
 
     .carousel-caption{
 
-        bottom: 150px;
+        bottom: 100px;
     }
 
     .carousel-caption h5{

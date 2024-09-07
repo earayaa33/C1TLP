@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100..900&display=swap');
 
+html, body{
+
+    overflow-x: hidden;
+}
 
 *{
 
@@ -63,6 +67,13 @@
     margin-top: 25px;
 }
 
+#porcentajeEnfasis{
+
+    font-size: 28px;
+    color: #338543;
+
+}
+
 .carousel-caption p{
 
     font-family: 'Montserrat', sans-serif;
@@ -98,9 +109,23 @@
     letter-spacing: 2px;
 }
 
+.colNavIcon{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#iconNav{
+
+    height: 35px;
+    width: 35px;
+
+}
 #brand{
 
-    font-size: 55px;
+    font-size: 40px;
 
 }
 
@@ -124,43 +149,6 @@
     height: 100vh;
 
 }
-/*
-#tituloDestacados{
-
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 55px;
-    padding-top: 40px;
-    text-align: center;
-    padding-bottom: 40px;
-
-
-}
-
-#itemsProductosDestacados{
-
-    background-color: #386641;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-
-}
-
-.card{
-
-    margin-bottom: 50px;
-    padding: 20px;
-    margin-left: 40px;
-
-
-}
-*/
-
-
 
 #seccionEquipo{
 
@@ -185,31 +173,82 @@
 
 }
 
-#footer{
 
-    color: #ffffff;
-    background-color: #3d3124;
-    text-align: center;
+#tituloHeaderProductos{
+    
+    color: #1A4D2E;
+    font-size: 55px;
+
+
 }
 
-/*css responsivo*/
+#parrafoHeaderProductos{
 
-@media only screen and (min-width: 985px){
 
-    .colsProductos, .colsFooter{
+    font-size: 30px;
 
-        display: flex;
-        justify-content: center;
-        align-content: center;
+}
+
+#footer{
+
+    color: #1A4D2E;
+    background-color: #ece8cc;
+}
+
+.colIconFooter{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#iconFooter{
+
+    height: 40px;
+    width: 40px;
+
+}
+
+.infoEmpresa{
+
+    text-align: justify;
+
+}
+
+#socialTitulo{
+
+    font-size: 35px;
+
+}
+
+.socialIcon{
+
+    margin-right: 15px;
+    font-size: 35px;
+
+}
+
+@media only screen and (max-width:448px){
+
+    #iconNav{
+
+    height: 15px;
+    width: 15px;
+
+    }
+    #brand{
+
+    font-size: 25px;
 
     }
 
 
-
 }
 
-@media only screen and (max-width:1200px) and (max-height: 1367px){
+@media only screen and (max-width:1200px) and (max-height: 2000px){
 
+    
     .carousel-inner img{
 
         height: 100vh;
@@ -247,55 +286,60 @@
         font-size: 20px;
     }
 
-    .card{
-
-        left: 100px;
-
-    }
-
 }
 
-/*seccion catalogo css*/
+#headerCatalogo{
 
-#containerCatalogo{
-
-    background-color: #F2E8CF;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+    padding: 30px 0;
+    text-align: center;
 
 }
 
 #tituloCatalogo{
 
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 60px;
-
+    color: #1A4D2E;
+    font-size: 50px;
 
 }
 
-.Catalogo1, .Catalogo2{
+#parrafoCatalogo{
+
+    line-height: 1.2;
+    font-size: 20px;
+
+}
+
+#catalogo1{
+
+    padding: 50px 0;
+
+}
+
+#catalogo2{
+
+    padding-bottom: 50px;
+
+}
+
+@media only screen and (max-width: 770px){
+
+    #headerCatalogo{
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    #tituloCatalogo{
+
+        font-size: 30px;
     
-    background-color: #F2E8CF;
+    }
 
-}
+    #parrafoCatalogo{
 
-.Catalogo1 .card{
-
-    color: #F2E8CF;
-    height: 500px;
-    background-color: #386641;
-
-
-}
-
-.Catalogo2 .card{
-
-    color: #F2E8CF;
-    height: 500px;
-    background-color: #386641;
-
+        line-height: 1;
+        font-size: 16px;
+    
+    }
 
 }

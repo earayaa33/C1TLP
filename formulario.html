@@ -10,9 +10,9 @@
 
     <title>Solicitud de reciclaje</title>
 </head>
-<body>
+<body id="bodyFormulario">
 
-    <!--navbar: barra de navegacion de la pagina-->
+    <!--Navbar: barra de navegacion de la pagina-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
         <div class="container-fluid">
           <div class="row">
@@ -49,16 +49,21 @@
       </nav>
       </div>
 
+      <section id="seccionFormulario">
+
       <div class="container d-flex justify-content-center" id="containerForm">
+        <!--El container del formulario utiliza un display flex que centra todos sus elementos para cualquier tipo de pantalla-->
 
         <div class="row">
 
           <div class="col">
 
-            <h1>Formulario de Reciclaje</h1>
+            <!--Titulo y parrafo del formulario-->
+            <h1 id="tituloFormulario">Formulario de Reciclaje</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dicta expedita officia quia aut asperiores quos modi assumenda, <br>
               cupiditate ullam voluptate non ab placeat magnam <br>voluptatem vero eius repellendus possimus accusantium</p>
             <form id="formReciclaje">
+
               <!-- Selección del tipo de residuo -->
               <div class="form-group">
                 <label for="residuo">Seleccione el tipo de residuo:</label>
@@ -109,7 +114,7 @@
               </div>
           
               <!-- Botón de envío -->
-              <button type="submit">Enviar</button>
+              <button type="submit" class="botonEnviar">Enviar</button>
             </form>
 
 
@@ -120,6 +125,20 @@
 
       </div>
 
+      </section>
+
+      <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toastExito" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              Formulario enviado exitosamente.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+
+      <!--Sección footer de la pagina-->
       
       <section id="footer" class="footer section-padding">
 
@@ -127,7 +146,7 @@
 
           <div class="row gy-5 gx-5">
 
-            <div class="col-12 col-md-12 col-lg-4 p-6">
+            <div class="col-12 col-lg-4 p-6">
 
               <div class="row">
 
@@ -188,10 +207,10 @@
       </section>
 
     
-    <script src="javascript/javascript.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+    <script src="javascript/javascript.js"></script>
     
 </body>
 </html>

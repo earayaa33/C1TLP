@@ -13,7 +13,7 @@
 <body>
 
     <!--navbar: barra de navegacion de la pagina-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="navBar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
       <div class="container-fluid">
         <div class="row">
           <div class="colNavIcon col-2">
@@ -68,11 +68,19 @@
 
     </div>
 
+    <!--Primera fila del catalogo-->
+
     <div class="container" id="catalogo1">
 
       <div class="row gy-3">
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
+          
+          <!--Explicación de los media query:
+          -Cuando la pantalla tiene un tamaño large, los productos se distribuyen utilizando 3 columnas cada uno
+          -Cuando la pantalla tiene un tamaño medium, los productos se distribuyen utilizando 6 columnas cada uno
+          -Cuando la pantalla tiene un tamaño small, los productos se distribuyen utilizando 12 columnas cada uno (una fila completa)-->
+
           <div class="card h-100">
             <img src="imagenes/item1.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -83,7 +91,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card h-100">
             <img src="imagenes/item2.png" class="card-img-top" alt="...">
@@ -96,7 +104,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card h-100">
             <img src="imagenes/item3.jpg" class="card-img-top" alt="...">
@@ -109,7 +117,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card h-100">
             <img src="imagenes/item4.png" class="card-img-top" alt="...">
@@ -125,12 +133,14 @@
       </div>
 
     </div>
+
+    <!--Segunda fila del catalogo-->
   
     <div class="container" id="catalogo2">
 
       <div class="row gy-3">
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
           <div class="card h-100">
             <img src="imagenes/item5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -141,7 +151,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card h-100">
             <img src="imagenes/item6.jpg" class="card-img-top" alt="...">
@@ -154,7 +164,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card h-100">
             <img src="imagenes/item7.png" class="card-img-top" alt="...">
@@ -167,7 +177,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card h-100">
             <img src="imagenes/item8.jpg" class="card-img-top" alt="...">
@@ -186,6 +196,7 @@
 
     </div>
 
+    <!--Sección footer de la pagina-->
     
     <section id="footer" class="footer section-padding">
 
@@ -193,7 +204,7 @@
 
         <div class="row gy-5 gx-5">
 
-          <div class="col-12 col-md-12 col-lg-4 p-6">
+          <div class="col-12 col-lg-4 p-6">
 
             <div class="row">
 
@@ -204,6 +215,7 @@
                 </div>
 
                 <div class="col-10 tituloInfoEmpresa">
+                  
                 <h2>tienda verde</h2>
 
               </div>
@@ -223,11 +235,10 @@
             
 
           </div>
-          <div class="col-12 col-md-12 col-lg-4 p-6">
+          <div class="col-12 col-lg-4 p-6">
             <div class="col-12 contactoTitulo">
               <h2>Info de contacto</h2>
-
-            </div>
+              
             <div class="col-12 contactoInfo">
               <p> <i class="bi bi-signpost"></i> Direccion: Lorem ipsum dolor sit amet consectetur. <br>
                 <i class="bi bi-telephone"></i> Telefono: +1800-222-3333 <br>
@@ -238,7 +249,10 @@
             
 
           </div>
-          <div class="col-12 col-md-12 col-lg-4 p-6 colSocials">
+
+          </div>
+
+          <div class="col-12 col-lg-4 p-6 colSocials"> 
             <h4 id="socialTitulo">Redes sociales</h4><br>
             <i class="bi bi-instagram socialIcon"></i> 
             <i class="bi bi-facebook socialIcon"></i> 
@@ -246,8 +260,8 @@
             <i class="bi bi-youtube socialIcon"></i> 
             <i class="bi bi-telegram socialIcon"></i> 
 
+          </div>
         </div>
-
       </div>
 
 
